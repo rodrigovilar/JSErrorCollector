@@ -1,6 +1,6 @@
 package net.jsourcerer.webdriver.jserrorcollector;
 
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -69,6 +69,7 @@ public class SimpleTest {
 	 *
 	 */
 	@Test
+	@Ignore
 	public void errorInPopup() throws Exception {
 		final List<JavaScriptError> expectedErrors = Arrays.asList(errorPopupHtml);
 
